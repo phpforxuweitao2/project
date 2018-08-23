@@ -10,16 +10,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return 'xxoo';
-});
-
-//根据模块名称写单条数据
-//Route::get('/home','Home\HomeController@index');
-//根据命名空间来写 路由组  Home模块  prefix=>'' 写路由前缀
+//前端
+Route::get('/','Home\IndexController@index');
 Route::group(['namespace'=>'Home'],function(){
     Route::get('/home/{name?}','HomeController@index')->where([
         'name'  => '\w+'
     ]);
 });
+
+//后端
