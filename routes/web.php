@@ -18,10 +18,6 @@ Route::group(['namespace'=>'Home'],function(){
     ]);
 });
 
-Route::get('/home',function(){
-	return '666666';
-});
-
 //后端
 Route::group(['namespace'=>'Admin'],function(){
     Route::get('bk_index','IndexController@index');
