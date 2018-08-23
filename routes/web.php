@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return 'xxoo';
 });
 
 //根据模块名称写单条数据
