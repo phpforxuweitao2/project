@@ -7,7 +7,8 @@ namespace App\Http\Controllers\Admin;
 
 class IndexController
 {
+    //显示后台首页方法
     public function index() {
-        return 'Admin->IndexController->index()';
+        return view('AdminPublic.index');
     }
 }
