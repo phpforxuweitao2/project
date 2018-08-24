@@ -21,5 +21,4 @@ Route::group(['namespace'=>'Home'],function(){
 //后端
 Route::group(['namespace'=>'Admin'],function(){
     Route::get('bk_index','IndexController@index');
-
 });
