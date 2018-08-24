@@ -24,6 +24,6 @@ Route::get('/home',function(){
 
 //后端
 Route::group(['namespace'=>'Admin'],function(){
-    Route::get('bk_index','IndexController@index');
+    Route::get('/admin/index','IndexController@index');
 
 });
