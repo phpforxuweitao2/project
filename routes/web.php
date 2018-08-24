@@ -20,6 +20,10 @@ Route::group(['namespace'=>'Home'],function(){
 
 //后端
 Route::group(['namespace'=>'Admin'],function(){
+<<<<<<< HEAD
     Route::get('/admin/index','IndexController@index');
 
+=======
+    Route::get('bk_index','IndexController@index');
+>>>>>>> 4a840aab954f05abd0e0a764f5a60f89c83f9587
 });
