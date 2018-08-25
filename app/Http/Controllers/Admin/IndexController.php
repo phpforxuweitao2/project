@@ -3,12 +3,15 @@
 
 
 namespace App\Http\Controllers\Admin;
+use Hash;
 
 
 class IndexController
 {
     //显示后台首页方法
     public function index() {
+
         return view('admin.index');
+
     }
 }
