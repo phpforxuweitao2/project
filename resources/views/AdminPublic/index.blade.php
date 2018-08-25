@@ -25,7 +25,7 @@
     <script type="text/javascript" src="/static/admin/lib/DD_belatedPNG_0.0.8a-min.js" ></script>
     <script>DD_belatedPNG.fix('*');</script>
     <![endif]-->
-    <title>印象日记后台</title>
+    <title>@yield('title','印象日记后台')</title>
     <meta name="keywords" content="H-ui.admin v3.1,H-ui网站后台模版,后台模版下载,后台管理系统模版,HTML后台模版下载">
     <meta name="description" content="H-ui.admin v3.1，是一款由国人开发的轻量级扁平化网站后台模板，完全免费开源的网站后台管理系统模版，适合中小型CMS后台系统。">
 </head>
@@ -34,9 +34,9 @@
     <!--后台顶部导航栏-->
     <header class="navbar-wrapper">
         <div class="navbar navbar-fixed-top">
-            <div class="container-fluid cl"> <a class="logo navbar-logo f-l mr-10 hidden-xs" href="/aboutHui.shtml">印象日记后台</a> <a class="logo navbar-logo-m f-l mr-10 visible-xs" href="/aboutHui.shtml">H-ui</a>
+            <div class="container-fluid cl"> <a class="logo navbar-logo f-l mr-10 hidden-xs" href="javascript:void(0);">印象日记后台</a> {{--<a class="logo navbar-logo-m f-l mr-10 visible-xs" href="/aboutHui.shtml">H-ui</a>--}}
                 <span class="logo navbar-slogan f-l mr-10 hidden-xs">v0.1</span>
-                <a aria-hidden="false" class="nav-toggle Hui-iconfont visible-xs" href="javascript:;">&#xe667;</a>
+                {{--<a aria-hidden="false" class="nav-toggle Hui-iconfont visible-xs" href="javascript:;">&#xe667;</a>--}}
                 {{--<nav class="nav navbar-nav">--}}
                     {{--<ul class="cl">--}}
                         {{--<li class="dropDown dropDown_hover">--}}
@@ -113,9 +113,8 @@
             <div class="show_iframe">
                 <div style="display:none" class="loading"></div>
                 <!-- 右侧内容显示区域 -->
-                <div class="am-u-sm-12">
-                    <h2>这里是右侧内容区域</h2>
-                </div>
+                @section('contain')
+                @show
                 <!-- 右侧内容显示区域结束 -->
             </div>
         </div>
