@@ -3,6 +3,7 @@
 
 
 namespace App\Http\Controllers\Admin;
+use Hash;
 
 
 class IndexController
@@ -10,5 +11,6 @@ class IndexController
     //显示后台首页方法
     public function index() {
         return view('AdminPublic.index');
+    	// echo $str = Hash::make('123456');
     }
 }
