@@ -29,13 +29,13 @@ Route::group(['namespace'=>'Admin'],function(){
     // 后台首页
     Route::get('bk_index','IndexController@index');
 
+    // 前台会员模块
+    Route::get('bk_users','UsersController@index');
+
     //后台管理员模块
 
-
-
 });
-// 前台会员模块
-Route::get('bk_users','UsersController@index');
+
 
 //后台登录模块
 Route::get('bk_login','Admin\LoginController@index');
