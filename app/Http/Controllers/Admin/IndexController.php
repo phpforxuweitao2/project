@@ -8,10 +8,15 @@ use Hash;
 
 class IndexController
 {
-    //显示后台首页方法
+
     public function index() {
 
         return view('admin.index.index');
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d233a2629bc7570f6ed3fb21cbb8b0ae689af4d1
 
     }
 }

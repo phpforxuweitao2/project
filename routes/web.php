@@ -20,9 +20,25 @@ Route::group(['namespace'=>'Home'],function(){
 
 //后端
 Route::group(['namespace'=>'Admin'],function(){
+
     Route::get('bk_index','IndexController@index');//后台首页
 
     //分类模块
-    Route::get('bk_cate','CatesController@index');
+    Route::get('bk_cate','CatesController@index');//分类模块列表页
+
+    // 后台首页
+    Route::get('bk_index','IndexController@index');
+
+    //后台管理员模块
+
+
 
 });
+// 前台会员模块
+Route::get('bk_users','UsersController@index');
+
+//后台登录模块
+Route::get('bk_login','LoginController@index');
+
+//后台登录处理
+Route::get('bk_dologin','LoginController@dologin');
