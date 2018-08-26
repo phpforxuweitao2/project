@@ -1,4 +1,4 @@
-@extends('AdminPublic.index')
+@extends('admin.AdminPublic.index')
 @section("title",'印象日记后台222')
 @section('contain')
 <div class="am-u-sm-12">

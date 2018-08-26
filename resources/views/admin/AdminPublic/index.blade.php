@@ -88,10 +88,11 @@
             </div>
         </div>
     </header>
+
     <!--后台顶部导航栏结束-->
 
     <!--左侧菜单栏-->
-    @include('AdminPublic.menu')
+    @include('admin.AdminPublic.menu')
     <!--左侧菜单栏结束-->
 
     <div class="dislpayArrow hidden-xs"><a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a></div>

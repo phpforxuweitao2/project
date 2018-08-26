@@ -20,8 +20,9 @@ Route::group(['namespace'=>'Home'],function(){
 
 //后端
 Route::group(['namespace'=>'Admin'],function(){
+    // 后台首页
+    Route::get('bk_index','IndexController@index');
 
-    Route::get('/admin/index','IndexController@index');
-
-
+    // 前台会员模块
+    Route::get('bk_users','UsersController@index');
 });
