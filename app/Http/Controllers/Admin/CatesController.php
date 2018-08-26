@@ -9,6 +9,6 @@ use App\Http\Controllers\Controller;
 class CatesController extends Controller
 {
     public function index() {
-        return 'Admin->CatesController->index()';
+        return view('admin.cates.index');
     }
 }

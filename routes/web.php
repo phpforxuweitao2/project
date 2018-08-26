@@ -20,5 +20,9 @@ Route::group(['namespace'=>'Home'],function(){
 
 //后端
 Route::group(['namespace'=>'Admin'],function(){
-    Route::get('bk_index','IndexController@index');
+    Route::get('bk_index','IndexController@index');//后台首页
+
+    //分类模块
+    Route::get('bk_cate','CatesController@index');
+
 });
