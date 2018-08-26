@@ -21,4 +21,14 @@ Route::group(['namespace'=>'Home'],function(){
 //后端
 Route::group(['namespace'=>'Admin'],function(){
     Route::get('bk_index','IndexController@index');
+
+    //后台登录模块
+    
+
+    //后台管理员模块
+    Route::get('bk_admin','');	
+
+ 
+
+
 });
