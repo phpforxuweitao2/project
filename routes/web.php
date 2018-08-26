@@ -23,10 +23,13 @@ Route::group(['namespace'=>'Admin'],function(){
     Route::get('bk_index','IndexController@index');
 
     //后台登录模块
-    
+    Route::get('bk_login','LoginController@index');
+
+    //后台登录处理
+    Route::get('bk_dologin','LoginController@dologin');
 
     //后台管理员模块
-    Route::get('bk_admin','');	
+    
 
  
 

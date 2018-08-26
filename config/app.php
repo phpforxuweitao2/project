@@ -178,6 +178,8 @@ return [
         App\Providers\RouteServiceProvider::class,
         /*laravel代码提示插件*/
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        /*验证码*/
+        Mews\Captcha\CaptchaServiceProvider::class,
     ],
 
     /*
@@ -228,6 +230,8 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
+        /* 验证码 */
+        'Captcha' => Mews\Captcha\Facades\Captcha::class,
     ],
 
 ];
