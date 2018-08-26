@@ -38,7 +38,7 @@ Route::group(['namespace'=>'Admin'],function(){
 Route::get('bk_users','UsersController@index');
 
 //后台登录模块
-Route::get('bk_login','LoginController@index');
+Route::get('bk_login','Admin\LoginController@index');
 
 //后台登录处理
-Route::get('bk_dologin','LoginController@dologin');
+Route::get('bk_dologin','Admin\LoginController@dologin');
